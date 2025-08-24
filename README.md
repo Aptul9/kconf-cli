@@ -1,6 +1,6 @@
 # Kubeconfig Management CLI (kconf)
 
-A powerful, cross-platform command-line tool to simplify common Kubernetes kubeconfig management tasks. This tool allows you to easily add, delete, and **export** contexts, as well as manage the `KUBECONFIG` environment variable persistently.
+A powerful, cross-platform command-line tool to simplify common Kubernetes kubeconfig management tasks. This tool allows you to easily add, delete, and export contexts, as well as manage the `KUBECONFIG` environment variable persistently.
 
 ## Installation
 
@@ -9,7 +9,7 @@ This tool is designed to be installed locally from the source code.
 1.  **Prerequisites**: Make sure you have Python 3.8 or higher installed.
 2.  **Clone the Repository**:
     ```bash
-    git clone <your-repository-url>
+    git clone https://github.com/Aptul9/kconf-cli
     cd kconf-cli
     ```
 3.  **Install the Tool**: Run the following command from the project's root directory. This command uses the `pyproject.toml` file to install the tool and all its dependencies, making the `kconf` command available system-wide.
