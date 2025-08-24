@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: my-new-cluster-name
+  cluster:
+    server: https://1.2.3.4:6443
+    certificate-authority-data: LS0tLS1GQUtFQ0VSVC0tLS0tCg==
+users:
+- name: my-new-user-name
+  user:
+    client-certificate-data: LS0tLS1GQUtFQ0VSVC0tLS0tCg==
+    client-key-data: LS0tLS1GQUtFS0VZLS0tLS0K
+contexts:
+- name: my-new-context-name
+  context:
+    cluster: my-new-cluster-name
+    user: my-new-user-name
+    namespace: default
+current-context: my-new-context-name
